@@ -1,0 +1,99 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/code/admin/lib/css/bootstrap.css">
+    <script src="/code/admin/lib/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="topbar">
+<!-- 动态请求fetch到topbar/index.html -->
+           
+        </div>
+        <div class="box">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-2 sidemenu">
+                   
+                  </div>
+                  <div class="col-10 content">
+                    <div class="maincontent">
+                      <!-- 面包屑 -->
+                        <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item " aria-current="page">Manage News</li>
+                            <li class="breadcrumb-item active" aria-current="page">News List</li>
+                          </ol>
+                        </nav>
+
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Headline</th>
+                              <th scope="col">Category</th>
+                              <th scope="col">Operate</th>
+                            </tr>
+                          </thead>
+                          <tbody id="listbody">
+                            <!-- <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                            </tr>
+                          
+                            </tr> -->
+                          </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+    <div class="modal fade " id="previewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="previewModalTitle">News Title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="previewModalContent">
+               News Content
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Hint</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Are you sure to delete this?
+
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary" id="delConfirm">Delete</button>
+              </div>
+          </div>
+      </div>
+  </div>
+    
+
+    <script src="index.js" type="module">
+        
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<ul class="nav flex-column" style="margin-top: 10px;">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="/code/admin/views/home/index.html">Home Page</a>
+    </li>
+    
+    <li class="nav-item user-manage-item">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#users-manage" aria-expanded="true" aria-controls="collapseOne">
+              Manage Users
+            </button>
+          </h2>
+          <div id="users-manage" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <a class="nav-link active" aria-current="page" href="/code/admin/views/user-manage/AddUsers/index.html" id="sidemenu-addUsers">Add User</a>
+            </div>
+            <div class="accordion-body">
+              <a class="nav-link active" aria-current="page" href="/code/admin/views/user-manage/UsersList/" id="sidemenu-usersList">Users List</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#news-manage" aria-expanded="true" aria-controls="collapseOne">
+              Manage News
+            </button>
+          </h2>
+          <div id="news-manage" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <a class="nav-link active" aria-current="page" href="/code/admin/views/news-manage/CreateNews/index.html" id="sidemenu-createNews">Create News</a>
+            </div>
+            <div class="accordion-body">
+              <a class="nav-link active" aria-current="page" href="/code/admin/views/news-manage/NewsList/index.html" id="sidemenu-newsList">News List</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      </li>
+        
+    
+    
+  </ul>
+  
+  <style>
+    .accordion-button:not(.collapsed) {
+        color: black;
+        background-color: white;
+        box-shadow: none;
+    }
+    .accordion-item{
+      border: 0;
+    }
+    .nav-link{
+      color: black;
+    }
+
+    .accordion-button:focus{
+      box-shadow: none;
+    }
+
+  </style>

@@ -1,0 +1,42 @@
+<!--
+    @authior: Ruilin Li
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/code/admin/lib/css/bootstrap.css">
+    <script src="/code/admin/lib/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+
+<body>
+
+    <div class="logincontainer">
+        <h2>FengQi background management system</h2>
+        <form id="loginform">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" aria-describedby="emailHelp" required>
+                
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Log in</button>
+
+            <div id="loginwarning" class="form-text" style="display: none;color:white;">The username and password is not matching</div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+    
+    
+</body>
+
+</html>
